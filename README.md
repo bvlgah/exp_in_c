@@ -7,7 +7,7 @@ it is a misconception a mutex always hurt performance. As per this article, for 
 penalties mostly come from lock contention. Therefore, using mutex is low-cost in the case of no other threads competing
 for it, as suggested by the average time of acquiring and then releasing a mutex. However these numbers came from microbenchmarks
 10 years ago (I am writing this in 2022), I am curious about whether there are improvements in mutex's implementaions. So I
-wrote some C code ([lock_overhead.c](#lock_overhead.c)).
+wrote some C code ([lock_overhead.c](/lock_overhead.c)).
 
 My settings are as follow:
 
